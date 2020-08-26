@@ -1,0 +1,15 @@
+apply plugin: "java"
+ext {
+    myLibraryVersion = "1.0.0"
+    myBintrayName = "entry-annotation"
+    myArtifactId = myBintrayName
+    myLibraryName = "entry annotation api"
+    myLibraryDescription = "annotation api for entrys"
+}
+
+
+dependencies {
+    compileOnly("com.google.android:android:4.1.1.4")
+}
+
+apply from:'https://raw.githubusercontent.com/caldremch/gradle-maven-kotlin-dsl/master/upload-to-jitpack-by-maven-publish.gradle'

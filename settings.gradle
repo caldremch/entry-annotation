@@ -1,0 +1,3 @@
+include ':entry-annotation'
+include ':app'
+rootProject.name = "entry-annotaion-project"
